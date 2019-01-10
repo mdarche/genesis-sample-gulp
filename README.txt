@@ -1,4 +1,4 @@
-# Genesis Sample Theme
+# Genesis Sample Gulp
 
 GitHub project link: https://github.com/studiopress/genesis-sample/.
 

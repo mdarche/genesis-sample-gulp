@@ -1,0 +1,24 @@
+{
+  "name": "genesis-sample-gulp",
+  "version": "1.0.0",
+  "description": "GitHub project link: https://github.com/studiopress/genesis-sample/.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mdarche/genesis-sample-gulp.git"
+  },
+  "author": "mdarche",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^9.3.1",
+    "css-mqpacker": "^7.0.0",
+    "cssnano": "^4.1.7",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-strip-debug": "^3.0.0",
+    "gulp-uglify-es": "^1.0.4",
+    "gulp-util": "^3.0.8",
+    "postcss-assets": "^5.0.0"
+  }
+}

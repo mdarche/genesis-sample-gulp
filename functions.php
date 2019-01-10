@@ -39,7 +39,7 @@ require_once get_stylesheet_directory() . '/lib/helper-functions.php';
 // Adds image upload and color select to Customizer.
 require_once get_stylesheet_directory() . '/lib/customize.php';
 
-// Includes Customizer CSS.
+// lib Customizer CSS.
 require_once get_stylesheet_directory() . '/lib/output.php';
 
 // Adds WooCommerce support.
@@ -78,10 +78,9 @@ function genesis_sample_enqueue_scripts_styles() {
 
 	wp_enqueue_style( 'dashicons' );
 
-	$suffix = ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ? '' : '.min';
 	wp_enqueue_script(
 		'genesis-sample-responsive-menu',
-		get_stylesheet_directory_uri() . "/js/responsive-menus{$suffix}.js",
+		get_stylesheet_directory_uri() . "/dist/js/responsive-menus.js",
 		array( 'jquery' ),
 		CHILD_THEME_VERSION,
 		true
@@ -93,13 +92,7 @@ function genesis_sample_enqueue_scripts_styles() {
 		genesis_sample_responsive_menu_settings()
 	);
 
-	wp_enqueue_script(
-		'genesis-sample',
-		get_stylesheet_directory_uri() . '/js/genesis-sample.js',
-		array( 'jquery' ),
-		CHILD_THEME_VERSION,
-		true
-	);
+	wp_enqueue_script( 'genesis_sample', get_stylesheet_directory_uri() . "/dist/scripts.js", array( 'jquery' ), false, true );
 
 }
 
