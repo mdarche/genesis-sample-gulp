@@ -27,3 +27,9 @@
     @content;
   }
 }
+
+@mixin bp-genesis {
+  @media only screen and (min-width: 960px) {
+    @content;
+  }
+}
