@@ -80,7 +80,7 @@ function genesis_sample_enqueue_scripts_styles() {
 
 	wp_enqueue_script(
 		'genesis-sample-responsive-menu',
-		get_stylesheet_directory_uri() . "/dist/js/responsive-menus.js",
+		get_stylesheet_directory_uri() . "/dist/responsive-menus.js",
 		array( 'jquery' ),
 		CHILD_THEME_VERSION,
 		true
